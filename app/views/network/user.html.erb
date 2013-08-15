@@ -1,0 +1,5 @@
+<p><%= @user.first %><%= @user.last %></p>
+
+<%= link_to "Delete", "http://localhost:3000/users/#{@user.id}", method: "delete" %>
+
+<%= link_to "Edit", "http://localhost:3000/users/#{@user.id}/edit" %>

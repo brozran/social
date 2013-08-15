@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Network</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= link_to "Home", "http://localhost:3000/users" %>
+<%= link_to "New Name", "http://localhost:3000/users/new" %>
+
+<%= yield %>
+
+</body>
+</html>

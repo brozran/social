@@ -1,0 +1,14 @@
+<h1>edit</h1>
+
+
+<%= form_tag "http://localhost:3000/users/#{@user.id}", method:"patch" do %>
+
+  <%= label_tag :first, "First:" %>
+  <%= text_field_tag :first %>
+
+  <%= label_tag :Last, "Last:" %>
+  <%= text_field_tag :last %>
+
+  <%=submit_tag "Edit Info" %>
+
+<% end %>

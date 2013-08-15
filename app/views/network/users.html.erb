@@ -1,0 +1,12 @@
+<h1>This is a list of the users in the database</h1>
+
+<ul>
+  <% @users.each do |u| %>
+
+    <li>
+        <%= link_to(u.first, "http://localhost:3000/users/#{u.id}") %>
+    </li>
+
+  <% end %>
+
+</ul>
